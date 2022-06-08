@@ -7,60 +7,82 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+        <script src="action.js"></script>        
     
     </head>
     <body>
-        <!---------------header----------------->
+        <!-----------------------header-------------------------------->
         <header>
-            <a href="index.html" class="logo"><img src="image/kpk-full.png" alt=""></a>
-            <div class="navLink">
-               
-            <ul class="navigation">
-                <li><a href="#banner">HOME</a></li> 
-                <li><a href="#PRODUCT">PRODUCT</a></li>
-                <li><a href="#SOLUTIONS">SOLUTION</a></li>
-                <li><a href="#ASSURANCE">OUR ASSURANCE</a></li>
-                <li><a href="#EVENT">EVENT</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
+            <a href="index.html"><img src="image/kpk-full.png" alt=""></a>
+            <div class="navigation">
+              <ul class="menu">
+                  <div class="close-btn"><i class="fas fa-times fa-2x" style="color: #fff;"></i></div>
+                  <li class="menu-item"><a href="#home">HOME</a></li>
+                  <li class="menu-item"><a href="#product">PRODUCT</a></li>
+                  <li class="menu-item"><a href="#solution">SOLUTION</a></li>
+                  <li class="menu-item">
+                      <a class="sub-btn" href="#">PROJECT</a>
+                      <ul class="sub-menu">
+                          <li class="sub-item"><a href="">Projects</a></li>
+                          <li class="sub-item"><a href="contract.html">Contract Lookup</a></li>
+                      </ul>
+                  </li>
+                  <li class="menu-item"><a href="newsRoot.html">NEWS</a></li>
+                  <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
+              </ul>
             </div>
-           
-        </header>
-        <section class="banner" id="banner">
+            <div class="menu-btn"><i class="fas fa-bars fa-2x"></i></div>
+          </header>
+          <script type="text/javascript">
+            //jquery for toggle dropdown menus
+            $(document).ready(function(){
+              //toggle sub-menus
+              $(".sub-btn").click(function(){
+                $(this).next(".sub-menu").slideToggle();
+              });
+        
+              //toggle more-menus
+              $(".more-btn").click(function(){
+                $(this).next(".more-menu").slideToggle();
+              });
+            });
+            //javascript for the responsive navigation menu
+            var menu = document.querySelector(".menu");
+            var menuBtn = document.querySelector(".menu-btn");
+            var closeBtn = document.querySelector(".close-btn");
+
+            menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+            });
+
+            closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+            });
+        </script>
+
+        <section class="banner" id="home">
             <div class="content">
                 <h2>KPK Digital Transformation</h2>
                 <p>KPK Digital Transformation is kas isaf lajf aiafi 
                     afak fsafjkafha afkhajfkl afhka hafhak aifkahfka ahjaf afak
                 afafffha. </p>
-                <a href="#" class="btn hero">Read More >></a>
+                <a href="#about-us" class="btn hero">Read More >></a>
             </div>
         </section>
-
+        
+           
 <!-------------------Product--------------------------->
-        <section class="product" id="PRODUCT">
-            <div class="row">
-                <div class="col50">
-                    <h2 class="titleText"><span>Product</span></h2>
-                        <p>ISO 9001, ISO 14001 manufacturer of single-sided, double-sided,
-                            Aluminum boards, multi-layer printed circuit boards. Various
-                            materials & RoHS finishes supplied (including electroless plating
-                            /immersion gold, Tin plated, HASL, OSP). Additional products & 
-                            services include the design, production & printed circuit board
-                            assemblies. UL approved.
-                        </p>
-                </div>
-                <div class="col50">
-                    <div class="imgBx">
-                        <img src="image/product0.jpg">
-                    </div>
-                </div>
+        <section class="product" id="product">            
+            <div class="title">
+                <h2 class="titleText"><span>Products</span></h2>
+                <p>ISO 9001, ISO 14001 manufacturer of single-sided, double-sided,
+                    Aluminum boards, multi-layer printed circuit boards. Various
+                    materials & RoHS finishes supplied (including electroless plating
+                    /immersion gold, Tin plated, HASL, OSP). Additional products & 
+                    services include the design, production & printed circuit board
+                    assemblies. UL approved.<br> </p>
             </div>
-
             <div class="content">
                 <div class="box">
                     <div class="imgBx">
@@ -84,12 +106,12 @@
                 </div>
             </div>
             <div class="title">
-                <a href="#" class="btn pro">View all</a>
+                <a href="product.html" class="btn btn-view-all">View all</a>
             </div>
         </section>
 
 <!--------------------Solution------------------------->
-        <section class="solution" id="SOLUTIONS">
+        <section class="solution" id="solution">
             <div class="title">
                 <h2 class="titleText"><span>Solutions</span></h2>
                 <p>We create solutions to solve your problems and make 
@@ -133,138 +155,120 @@
                 </div>
             </div>
         </section>
-<!-------------------Our Assurance--------------------------->
 
-        <section class="assurance" id="ASSURANCE">
-            <div class="title">
-                <h2 class="titleText"><span>Our Assurance</span></h2>
-                
-            </div>
-            <div class="content">
-                <img src="image/assurance1.jpg">
-                <img src="image/assurance2.png">
-                <img src="image/assurance3.jpg">
-                <img src="image/assurance4.jpg">
-                <img src="image/assurance5.jpg">
-                <img src="image/assurance6.jpg">
-                <img src="image/assurance7.png">
-                <img src="image/assurance8.jpg">
-            </div>
-        </section>
-<!-------------------Customer--------------------------->
+<!---------------------About us-------------------------->
+    <section class="about-us" id="about-us">
+        <div class="title">
+            <h2 class="titleText"><span>About us</span></h2>
+            <p>KPK Digital Transformation is an Authorized Distributor of HMS Industrial Networks AB 
+                and as well as 
+                a System Integrator in providing solutions for Industrial IoT. We work closely with
+                our partners to offer customers wide range of complete application solutions across 
+                a diverse range of industries. Aucontech has always been striving in offering to our
+                customers with high-quality, high-performance, reliable products and services. <br>
 
-        <section class="customer">
-            <div class="title">
-                <h2 class="titleText"><span>Customer</span></h2>
+                Our mission is to help our customer deploy leading edge solutions that leverage 
+                technology to improve safety, reduce costs, increase productivity as well as product
+                quality.</p>
+        </div>
+    </section>        
+    <!-------------------Our Assurance--------------------------->
+            <section class="assurance" id="assurance">
+                <div class="title">
+                    <h2 class="titleText"><span>Our Assurance</span></h2>
+                    
+                </div>
                 <div class="content">
-                    <img src="image/customer1.jpg">
-                    <img src="image/customer2.png">
-                    <img src="image/customer3.jpg">
-                    <img src="image/customer4.jpg">
-                    <img src="image/customer5.png">
-                    <img src="image/customer6.jpg">
-                    <img src="image/customer7.jpg">
-                    <img src="image/customer8.png">
+                    <img src="image/assurance1.jpg">
+                    <img src="image/assurance2.png">
+                    <img src="image/assurance4.jpg">
+                    <img src="image/assurance5.jpg">
+                </div>
+            </section>
+    <!-------------------Customer--------------------------->
+    <section class="customer">
+        <div class="title">
+            <h2 class="titleText"><span>Customer</span></h2>
+            <p>We cooperate with many companies<br> </p>
+        </div>
+        <div class="slideshow">
+            <div class="slide-wrapper">
+            <div class="slide"><a href="#"><img src="image/customer1.jpg"></a></div>
+            <div class="slide"><a href="#"><img src="image/customer2.png"></a></div>
+            <div class="slide"><a href="#"><img src="image/customer3.jpg"></a></div>
+            <div class="slide"><a href="#"><img src="image/customer4.jpg"></a></div>
+            <div class="slide"><a href="#"><img src="image/customer5.png"></a></div>
+            <div class="slide"><a href="#"><img src="image/customer6.jpg"></a></div>        
+            </div>
+        </div>
+    </section>
+
+
+    <!---------------------Footer--------------------------->
+    <footer class="footer">
+        <div class="info">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li><a href="#">eBuy</a></li>
+                        <li><a href="#">HighTech</a></li>
+                        <li><a href="#">LiFe</a></li>
+                        <li><a href="#">GoFar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SOLUTIONS</h4>
+                    <ul>
+                        <li><a href="#">Smart Factory</a></li>
+                        <li><a href="#">Smart System</a></li>
+                        <li><a href="#">Smart Traffic</a></li>
+                        <li><a href="#">Smart Maintance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>PROJECT</h4>
+                    <ul>
+                        <li><a href="#">Communication</a></li>
+                        <li><a href="#">Monitering system</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>                        
+                    <div>
+                        <ul>
+                            <li><a href=""><i class="fas fa-home"></i>
+                                DEF Building, District 1, HCM City, VN  </a>                                
+                            </li>
+                            <li><a href=""><i class="fas fa-envelope"></i>
+                                info@business.com</a>                                
+                            </li>                        
+                            <li><a href=""><i class="fas fa-phone"></i>
+                                0123 456 789</a>                                
+                            </li>
+                            <li><a href=""><i class="fas fa-phone"></i>
+                                0123 456 789</a>                                
+                            </li>
+                        </ul>
+                        
+                    </div>
                 </div>
             </div>
-        </section>
-
-
-<!-------------------Footer---------------------->
-        <footer class="footer">
-            <div class="info">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4 class= "title"id="PRODUCT">PRODUCTS</h4>
-                        <ul>
-                            <li><a href="#">eBuy</a></li>
-                            <li><a href="#">HighTech</a></li>
-                            <li><a href="#">LiFe</a></li>
-                            <li><a href="#">GoFar</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>SOLUTIONS</h4>
-                        <ul>
-                            <li><a href="#">Smart Factory</a></li>
-                            <li><a href="#">Smart System</a></li>
-                            <li><a href="#">Smart Traffic</a></li>
-                            <li><a href="#">Smart Maintance</a></li>
-                            <li><a href="#">Smart Protection</a></li>
-                            <li><a href="#">Smart Cleaning</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>PROJECT</h4>
-                        <ul>
-                            <li><a href="#">Communication</a></li>
-                            <li><a href="#">Monitering system</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>CONTACT</h4>
-                        <ul>
-                            <li><a href="#">Technical support</a></li>
-                            <li><a href="#">Purchase support</a></li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="footer-row">                
+            <div class="copyright">
+                    <h3>Copyright @ 2021 KPK DIGITAL TRANSFORMATION CO., LTD.</h3>
+            </div>
+            <div class="face-in">
+                <div class="face-in-icon">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                </div>
+                <div class="face-in-icon">
+                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
                 </div>
             </div>
-            <div class="container">
-                
-                <div class="footer-row">
-                        <h3>Copyright @ 2021 KPK DIGITAL TRANSFORMATION CO., LTD</h3>
-                        <div class="info">
-                            <div class="contact-row">
-                                <div>                                    
-                                    <h5><i class="fas fa-map-marker-alt"></i> ABC Road, DEF Building, district 1, Ho Chi Minh City, Vietnam</h5>
-                                </div>
-                            </div>
-                            <div class="contact-row">
-                                <div>                                    
-                                    <h5><i class="fa fa-phone"></i> +84 123456789</h5>
-                                </div>
-                            </div>
-                            <div class="contact-row">
-                                <div>                                    
-                                    <h5><i class="fa fa-envelope"></i> info@bussiness.com</h5>
-                                </div>
-                            </div>
-                            <div class="face-in">
-                                <a href="#"><i class="fab fa-facebook-square" width=80px></i></a>
-                                <a href="#"><i class="fab fa-linkedin" width=80px></i></a>
-                            </div>
-                            
-
-                        </div>
-                </div>
-            </div>
-        </footer>
-        
-        
-<!-----------script------------->
-        <script type="text/javascript">
-            window.addEventListener('scroll', function(){
-                const header = document.querySelector('header');
-                header.classList.toggle("sticky", window.scrollY > 0);
-            });
-        </script>
-
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
-
-<script type="text/javascript">
-    window.addEventListener('scroll', function(){
-        const header = document.querySelector('header');
-        header.classList.toggle("sticky", window.scrollY > 0);
-    });
-</script>
+        </div>
+    </footer>
+      
     </body>
 </html>

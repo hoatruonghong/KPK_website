@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>KPK Digital Transformation</title>
-        <link rel="stylesheet" href="css/forContact.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/forNewsRoot.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-        <script src="action.js"></script>        
+        <script src="action.js"></script>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="NvuqPM3A"></script>
+
     </head>
     <body>
         <header>
@@ -22,7 +25,7 @@
                   <li class="menu-item"><a href="index.html#product">PRODUCT</a></li>
                   <li class="menu-item"><a href="index.html#solution">SOLUTION</a></li>
                   <li class="menu-item">
-                      <a class="sub-btn" href="#">PROJECT</a>
+                      <a class="sub-btn" href="#"> PROJECT</a>
                       <ul class="sub-menu">
                           <li class="sub-item"><a href="#">Projects</a></li>
                           <li class="sub-item"><a href="contract.html">Contract Lookup</a></li>
@@ -61,80 +64,85 @@
             });
         </script>
 
-        </section>
-        <section class="contact" id="contact">
-            <div class="overtitle">
-                <div class="title">
-                    <h2 class="titleText"><span>CONTACT</span></h2>
-                    <p>If you have any question, send them to us<br></p>
-                </div>
-            </div>
-            <div class="contact-row">
-                <div class="contact-col info"> 
-                    <div class="contact-col-info">
-                        <div class="contact-info">
-                            <div class="single-contact-info">
-                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                                <div class="contact-text">
-                                    <h3>Address:</h3>
-                                    <p>ABC Road, DEF Building, District 1, Ho Chi Minh City, Vietnam</p>    
-                                </div>
-                            </div>
-                            <div class="single-contact-info">
-                                <div class="icon"><i class="fa fa-phone"></i></div>
-                                <div class="contact-text">
-                                    <h3>Phone numbers:</h3>
-                                    <p>(+84) 123456789</p>    
-                                </div>
-                            </div>
-                            <div class="single-contact-info">
-                                <div class="icon"><i class="fa fa-envelope"></i></div>
-                                <div class="contact-text">
-                                    <h3>Email:</h3>
-                                    <p>info@bussiness.com</p>
-                                </div>                        
-                            </div>
-                        </div>                
-                        <div class="location">                            
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4946681007846!2d106.65843061458047!3d10.773374292323572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec3c161a3fb%3A0xef77cd47a1cc691e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6FjaCBraG9hIC0gxJDhuqFpIGjhu41jIFF14buRYyBnaWEgVFAuSENN!5e0!3m2!1svi!2s!4v1624435647571!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                    
-                </div>
         
-                <div class="contact-col form">
-                    <div class="contact-col-form">
-                        <div class="contact-title">
-                            <div class="title">
-                                <h2 class="titleText"><span>CONTACT</span></h2>
-                                <p>If you have any question, send them to us<br></p>
-                            </div>
-                        </div>
-                        <div class="contact-form-area">
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your phone numbers" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" cols="30" rows="5" placeholder="Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <section class="news-title">
+            <div class="title">
+                <h2 class="titleText"><span>Product</span></h2>
             </div>
         </section>
 
+        <section class="news-grid">
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <a href="#"><img src="image/product1.jpg"></a>
+                   </div>
+                    <div class="text">
+                        <h3><a href="">Product A</a></h3>
+                        <p>Capable of automated assembly, hand insertion and soldering,
+                            reflowing and wave soldering.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href="#"><img src="image/product0.jpg"></a>
+                    </div>
+                    <div class="text">
+                        <h3><a href="">Product B</a></h3>                       
+                        <p>Capable of automated assembly, hand insertion and soldering,
+                            reflowing and wave soldering.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href="#"><img src="image/product2.jpg"></a>
+                    </div>
+                    <div class="text">
+                        <h3><a href="">Product C</a></h3>
+                        <p>Capable of automated assembly, hand insertion and soldering,
+                            reflowing and wave soldering.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href="#"><img src="image/product1.jpg"></a>
+                    </div>
+                    <div class="text">
+                        <h3><a href="">Product D</a></h3>
+                        <p>Capable of automated assembly, hand insertion and soldering,
+                            reflowing and wave soldering.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href="#"><img src="image/news4.jpg"></a>
+                    </div>
+                    <div class="text">
+                        <h3><a href="">Product E</a></h3>
+                        <p>Capable of automated assembly, hand insertion and soldering,
+                            reflowing and wave soldering.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href="#"><img src="image/product0.jpg"></a>
+                    </div>
+                    <div class="text">
+                        <h3><a href="">Product F</a></h3>
+                        <p>Capable of automated assembly, hand insertion and soldering,
+                            reflowing and wave soldering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
         <footer class="footer">
             <div class="info">
                 <div class="row">

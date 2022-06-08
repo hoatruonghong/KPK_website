@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KPK Digital Transformation</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/forNews.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+        <script src="action.js"></script>
+        <div id="fb-root"></div>
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="image/kpk-full.png" alt=""></a>
+            <div class="navigation">
+              <ul class="menu">
+                  <div class="close-btn"><i class="fas fa-times fa-2x" style="color: #fff;"></i></div>
+                  <li class="menu-item"><a href="index.html">HOME</a></li>
+                  <li class="menu-item"><a href="index.html#product">PRODUCT</a></li>
+                  <li class="menu-item"><a href="index.html#solution">SOLUTION</a></li>
+                  <li class="menu-item">
+                      <a class="sub-btn" href="#">PROJECT</a>
+                      <ul class="sub-menu">
+                          <li class="sub-item"><a href="">Projects</a></li>
+                          <li class="sub-item"><a href="contract.html">Contract Lookup</a></li>
+                      </ul>
+                  </li>
+                  <li class="menu-item"><a href="newsRoot.html">NEWS</a></li>
+                  <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
+              </ul>
+            </div>
+            <div class="menu-btn"><i class="fas fa-bars fa-2x"></i></div>
+        </header>
+        <script type="text/javascript">
+            //jquery for toggle dropdown menus
+            $(document).ready(function(){
+              //toggle sub-menus
+              $(".sub-btn").click(function(){
+                $(this).next(".sub-menu").slideToggle();
+              });
+        
+              //toggle more-menus
+              $(".more-btn").click(function(){
+                $(this).next(".more-menu").slideToggle();
+              });
+            });
+            //javascript for the responsive navigation menu
+            var menu = document.querySelector(".menu");
+            var menuBtn = document.querySelector(".menu-btn");
+            var closeBtn = document.querySelector(".close-btn");
+
+            menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+            });
+
+            closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+            });
+        </script>        
+        <section class="content">
+            <div class="news-container">
+                <div class="post">
+                    <div class="post-title">
+                        <h1>CHỈ SỐ SẢN XUẤT TOÀN NGÀNH CÔNG NGHIỆP TĂNG 11,6% SO VỚI 
+                            CÙNG KỲ NĂM 2020</h1>
+                        
+                    </div>                    
+                    <div class="post-content">
+                        <div class="icon"><i class="far fa-calendar-alt" style="color: #e08d20;"></i>02/07/2021</div>
+                        <p>
+                            Theo Bộ Công Thương, chỉ số sản xuất toàn ngành công nghiệp (IIP) tháng 5/2021
+                             tăng 1,6% so với tháng trước và tăng 11,6% so với cùng kỳ năm 2020. Tính chung 
+                             5 tháng đầu năm 2021, IIP tăng 9,9% so với cùng kỳ năm 2020.
+
+                            Đáng chú ý, một số ngành trọng điểm có chỉ số sản xuất 5 tháng tăng cao so với 
+                            cùng kỳ năm trước như ngành sản xuất kim loại (tăng 38%); thép cán (tăng 60%);
+                             ô tô (tăng 56%); linh kiện điện thoại (tăng 36,4%); điện thoại di động (tăng 22,2%)...
+                        </p>
+                        <div class="post-image">
+                            <img src="image/news1.jpg" alt="Ảnh minh họa">
+                        </div>
+                        <p>
+                            Theo Bộ Công Thương, kết quả trên cho thấy đà hồi phục của ngành Công nghiệp từ 
+                            cuối năm 2020 nhờ các giải pháp kiểm soát dịch Covid-19 hiệu quả, cùng các chính sách 
+                            hỗ trợ doanh nghiệp, kích cầu thị trường trong nước và khơi thông thị trường nước ngoài,
+                            đẩy mạnh xuất khẩu. <br>
+                            Tuy nhiên, từ cuối tháng 4 đến nay, dịch Covid-19 bùng phát với biến chủng mới có
+                             tốc độ lây lan nhanh, lại “tấn công” vào các khu công nghiệp, đã đe dọa đến hoạt động
+                              sản xuất, kinh doanh của doanh nghiệp. <br>
+                             Chủ tịch Hội đồng quản trị Công ty cổ phần TOMECO An Khang Lê Quý Khả cho biết,
+                              sang năm 2021, các đơn hàng ổn định hơn, song giá thép tăng cao, lại cộng với 
+                              đợt dịch Covid-19 bùng phát, có nguy cơ ảnh hưởng đến hoạt động sản xuất của 
+                              doanh nghiệp. Vì vậy, ngoài chính sách hỗ trợ giãn thuế, các doanh nghiệp mong muốn 
+                              sớm được tiếp cận nguồn vắc xin để tiêm phòng cho công nhân, người lao động. <br>
+                            Ngoài ra, các doanh nghiệp cũng chủ động xây dựng phương án phòng, chống dịch, bảo vệ sản xuất. <br>
+                            Trước diễn biến của dịch Covid-19, UBND thành phố Hà Nội đã giao Sở Công Thương chịu
+                             trách nhiệm đôn đốc, kiểm tra công tác phòng, chống dịch, đồng thời, tháo gỡ khó khăn, 
+                             vướng mắc, hỗ trợ doanh nghiệp bảo vệ sản xuất. “Hiện, các đoàn công tác của Sở Công Thương 
+                             đang làm việc với các khu, cụm công nghiệp, nắm bắt tình hình, tổng hợp kiến nghị của doanh nghiệp 
+                             để báo cáo thành phố”, Phó Giám đốc Sở Công Thương Hà Nội Đàm Tiến Thắng cho hay. <br>
+
+                            Theo Bộ Công Thương, để giữ đà tăng trưởng sản xuất công nghiệp trong tháng 6 và những tháng tiếp theo của năm 2021, 
+                            việc triển khai biện pháp phòng, chống dịch, bảo vệ các khu, cụm công nghiệp là nhiệm vụ hàng đầu. Bên cạnh việc đẩy
+                            nhanh tiến độ xây dựng bản đồ an toàn phòng, chống dịch và thực hiện các tiêu chí sản xuất an toàn, Bộ Công Thương
+                            yêu cầu các sở công thương, ban quản lý khu công nghiệp, chế xuất kiểm tra, yêu cầu các doanh nghiệp tự đánh giá,
+                            tự rà soát, điều chỉnh những nhiệm vụ, giải pháp cần thiết để vừa phòng, chống dịch, vừa bảo đảm sản xuất. <br>
+
+                            Lãnh đạo các khu kinh tế, khu công nghiệp, cụm công nghiệp, các nhà máy, xí nghiệp phải có cam kết bằng văn bản
+                            và chịu trách nhiệm trước cấp trên về những nhiệm vụ, giải pháp phòng, chống dịch. <br>
+
+                            Bộ Công Thương cũng đề nghị các địa phương phối hợp, xử lý cán bộ, công chức của ngành lơ là, chủ quan trong phòng, 
+                            chống dịch, để xảy ra hậu quả nghiêm trọng, ảnh hưởng đến hoạt động sản xuất, kinh doanh. <br>
+                        </p>
+                        <div class="post-author">-Admin-</div>
+                    </div>
+                    <div class="comment-fb">
+
+                    </div>
+
+                    <div class="news-related">
+                        <div class="news-related-title">
+                            TIN TỨC LIÊN QUAN
+                        </div>
+                        <div class="content">
+                            <div class="content-box">
+                                <div class="content-box-image"><a href=""><img src="image/news5.jpg" alt=""></a></div>
+                                <div class="content-box-title">
+                                    <h2><a href="">Giữ vững an ninh trật tự ở các khu công nghiệp</a></h2>
+                                    <p>
+                                    Là tỉnh thuộc vùng kinh tế trọng điểm phía Nam có 31 khu công nghiệp 
+                                    đang hoạt động, Đồng Nai thu hút thêm hàng ngàn người lao động...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="content-box-image"><a href=""><img src="image/news5.jpg" alt=""></a></div>
+                                <div class="content-box-title">
+                                    <h2><a href="">Giữ vững an ninh trật tự ở các khu công nghiệp</a></h2>
+                                    <p>
+                                    Là tỉnh thuộc vùng kinh tế trọng điểm phía Nam có 31 khu công nghiệp 
+                                    đang hoạt động, Đồng Nai thu hút thêm hàng ngàn người lao động...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="content-box-image"><a href=""><img src="image/news5.jpg" alt=""></a></div>
+                                <div class="content-box-title">
+                                    <h2><a href="">Giữ vững an ninh trật tự ở các khu công nghiệp</a></h2>
+                                    <p>
+                                    Là tỉnh thuộc vùng kinh tế trọng điểm phía Nam có 31 khu công nghiệp 
+                                    đang hoạt động, Đồng Nai thu hút thêm hàng ngàn người lao động...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sidebar">
+                    <div class="news-category">
+                        <div class="title">
+                            <h2 class="titleText">Danh mục tin tức</h2>
+                        </div>
+                        <div class="news-category-items">
+                            <ul>
+                                <li>
+                                    <div class="news-category-item">
+                                        <a href="newsRoot.html">Tin cập nhật</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="news-category-item">
+                                        <a href="newsRoot.html">Tin kinh tế</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="news-others">
+                        <div class="title">
+                            <h2 class="titleText">Tin tức nổi bật</h2>
+                        </div>
+                        <div class="news-others-items">
+                            <ul>
+                                <li>
+                                    <div class="news-others-item">
+                                        <div class="other-image"><a href=""><img src="image/news2.jpg" alt=""></a></div>
+                                        <div class="other-item-content"><a href="">Đẩy nhanh tiến độ dự án xây dựng Khu công nghiệp</a></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="news-others-item">
+                                        <div class="other-image"><a href=""><img src="image/news3.jpg" alt=""></a></div>
+                                        <div class="other-item-content"><a href="">Có nên kiểm soát đầu tư bất động sản công nghiệp ?</a></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="news-others-item">
+                                        <div class="other-image"><a href=""><img src="image/news4.jpg" alt=""></a></div>
+                                        <div class="other-item-content"><a href="">Doanh nghiệp chi vốn tiêm vắc xin cho công nhân</a></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="info">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>PRODUCTS</h4>
+                        <ul>
+                            <li><a href="#">eBuy</a></li>
+                            <li><a href="#">HighTech</a></li>
+                            <li><a href="#">LiFe</a></li>
+                            <li><a href="#">GoFar</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>SOLUTIONS</h4>
+                        <ul>
+                            <li><a href="#">Smart Factory</a></li>
+                            <li><a href="#">Smart System</a></li>
+                            <li><a href="#">Smart Traffic</a></li>
+                            <li><a href="#">Smart Maintance</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>PROJECT</h4>
+                        <ul>
+                            <li><a href="#">Communication</a></li>
+                            <li><a href="#">Monitering system</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>CONTACT</h4>                        
+                        <div>
+                            <ul>
+                                <li><a href=""><i class="fas fa-home"></i>
+                                    DEF Building, District 1, HCM City, VN  </a>                                
+                                </li>
+                                <li><a href=""><i class="fas fa-envelope"></i>
+                                    info@business.com</a>                                
+                                </li>                        
+                                <li><a href=""><i class="fas fa-phone"></i>
+                                    0123 456 789</a>                                
+                                </li>
+                                <li><a href=""><i class="fas fa-phone"></i>
+                                    0123 456 789</a>                                
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row">                
+                <div class="copyright">
+                        <h3>Copyright @ 2021 KPK DIGITAL TRANSFORMATION CO., LTD.</h3>
+                </div>
+                <div class="face-in">
+                    <div class="face-in-icon">
+                        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    </div>
+                    <div class="face-in-icon">
+                        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
